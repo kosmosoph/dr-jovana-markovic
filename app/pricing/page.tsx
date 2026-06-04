@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { PricingPage } from "../../src/app/components/PricingPage";
-import { Navigation } from "../../src/app/components/Navigation";
-import { BookingModal } from "../../src/app/components/BookingModal";
+import { PricingPage } from "@/components/PricingPage";
+import { Navigation } from "@/components/Navigation";
+import { BookingModal } from "@/components/BookingModal";
 
 export default function Pricing() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);

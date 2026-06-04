@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 // @ts-ignore: allow side-effect import of global CSS
-import "../src/styles/index.css";
+import "@/styles/index.css";
+
 
 export const metadata: Metadata = {
   title: "dr Jovana Marković - stomatologija, skin care i anti-aging",

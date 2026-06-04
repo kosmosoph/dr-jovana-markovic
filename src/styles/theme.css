@@ -133,28 +133,7 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    /* font-family:
-      "Montserrat",
-      ui-sans-serif,
-      system-ui,
-      -apple-system,
-      sans-serif; */
-    /* font-weight: var(--font-weight-normal); */
   }
-
-  /* h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family:
-      "Montserrat",
-      ui-sans-serif,
-      system-ui,
-      -apple-system,
-      sans-serif;
-  } */
 
   .sr-only {
     position: absolute;

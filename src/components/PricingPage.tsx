@@ -17,29 +17,27 @@ const estetikaServices: PriceItem[] = [
     items: [
       { name: "Botkos", price: "od 200 EUR" },
       { name: "Hijaluronski fileri (1ml)", price: "300 EUR" },
-      { name: "Kolagen stimulatori", price: "od 450 EUR" }
+      { name: "Kolagen stimulatori", price: "od 450 EUR" },
     ],
   },
   {
     category: "Dubinska hidratacija i regeneracija",
     items: [
       { name: "Biorevitalizacija", price: "od 200 EUR" },
-      { name: "Mezoterapija lica i tela", price: "od 80 EUR" }
+      { name: "Mezoterapija lica i tela", price: "od 80 EUR" },
     ],
   },
   {
     category: "Tekstura kože",
     items: [
       { name: "Derampen", price: "od 80 EUR" },
-      { name: "Hemijski piling", price: "80 EUR" }
+      { name: "Hemijski piling", price: "80 EUR" },
     ],
   },
   {
     category: "Konturisanje lica i tela",
-    items: [
-      { name: "Lipoliza", price: "od 80 EUR" }
-    ],
-  }
+    items: [{ name: "Lipoliza", price: "od 80 EUR" }],
+  },
 ];
 
 const stomatologijaServices: PriceItem[] = [
@@ -64,7 +62,10 @@ const stomatologijaServices: PriceItem[] = [
   {
     category: "Dečija i preventivna stomatologija",
     items: [
-      { name: "Uklanjanje mekih naslaga i instrukcije za održavanje oralne higijene", price: "2.000 RSD" },
+      {
+        name: "Uklanjanje mekih naslaga i instrukcije za održavanje oralne higijene",
+        price: "2.000 RSD",
+      },
       { name: "Zalivanje fisura", price: "1.500 RSD" },
       { name: "Fluorizacija zuba", price: "3.000 RSD" },
       { name: "Plomba na mlečnim zubima", price: "2.500 RSD" },
@@ -81,7 +82,10 @@ const stomatologijaServices: PriceItem[] = [
       { name: "FRC nadogradnja", price: "5.000 RSD" },
       { name: "Privremena kruna", price: "3.600 RSD" },
       { name: "Totalna proteza (po vilici)", price: "36.000 RSD" },
-      { name: "Parcijalna skeletirana proteza (vizil proteza, po vilici)", price: "54.000 RSD" },
+      {
+        name: "Parcijalna skeletirana proteza (vizil proteza, po vilici)",
+        price: "54.000 RSD",
+      },
     ],
   },
   {
@@ -133,37 +137,7 @@ export function PricingPage() {
         </div>
 
         <div className="mb-20">
-          {/* <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 text-center">
-            Stomatologija
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {stomatologijaServices.map((category) => (
-              <div
-                key={category.category}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden border border-border hover:shadow-xl transition-shadow"
-              >
-                <div className="bg-gradient-to-r from-primary to-primary/80 text-white p-6">
-                  <h3 className="text-xl">{category.category}</h3>
-                </div>
-                <div className="p-6">
-                  <div className="space-y-4">
-                    {category.items.map((item, index) => (
-                      <div
-                        key={index}
-                        className="flex justify-between items-center pb-4 border-b border-border last:border-b-0"
-                      >
-                        <span className="text-foreground">{item.name}</span>
-                        <span className="text-primary whitespace-nowrap ml-4">{item.price}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div> */}
-
-
-              <h2 className="font-sans text-3xl md:text-4xl text-foreground mb-8 text-center">
+          <h2 className="font-sans text-3xl md:text-4xl text-foreground mb-8 text-center">
             Estetika
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -183,7 +157,9 @@ export function PricingPage() {
                         className="flex justify-between items-center pb-4 border-b border-border last:border-b-0"
                       >
                         <span className="text-foreground">{item.name}</span>
-                        <span className="text-primary whitespace-nowrap ml-4">{item.price}</span>
+                        <span className="text-primary whitespace-nowrap ml-4">
+                          {item.price}
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -194,36 +170,7 @@ export function PricingPage() {
         </div>
 
         <div>
-          {/* <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 text-center">
-            Estetika
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {estetikaServices.map((category) => (
-              <div
-                key={category.category}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden border border-border hover:shadow-xl transition-shadow"
-              >
-                <div className="bg-gradient-to-r from-primary to-primary/80 text-white p-6">
-                  <h3 className="text-xl">{category.category}</h3>
-                </div>
-                <div className="p-6">
-                  <div className="space-y-4">
-                    {category.items.map((item, index) => (
-                      <div
-                        key={index}
-                        className="flex justify-between items-center pb-4 border-b border-border last:border-b-0"
-                      >
-                        <span className="text-foreground">{item.name}</span>
-                        <span className="text-primary whitespace-nowrap ml-4">{item.price}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div> */}
-
-               <h2 className="font-sans text-3xl md:text-4xl text-foreground mb-8 text-center">
+          <h2 className="font-sans text-3xl md:text-4xl text-foreground mb-8 text-center">
             Stomatologija
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -243,7 +190,9 @@ export function PricingPage() {
                         className="flex justify-between items-center pb-4 border-b border-border last:border-b-0"
                       >
                         <span className="text-foreground">{item.name}</span>
-                        <span className="text-primary whitespace-nowrap ml-4">{item.price}</span>
+                        <span className="text-primary whitespace-nowrap ml-4">
+                          {item.price}
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -256,8 +205,9 @@ export function PricingPage() {
         <div className="mt-16 bg-white rounded-2xl shadow-lg p-8 text-center">
           <h3 className="text-foreground text-xl mb-4">Napomena</h3>
           <p className="text-muted-foreground">
-            Cene su informativnog karaktera. Konačna cena se određuje nakon konsultacije sa doktorom,
-            u zavisnosti od individualnih potreba pacijenta. Sve cene uključuju besplatnu konsultaciju.
+            Cene su informativnog karaktera. Konačna cena se određuje nakon
+            konsultacije sa doktorom, u zavisnosti od individualnih potreba
+            pacijenta. Sve cene uključuju besplatnu konsultaciju.
           </p>
         </div>
       </div>
