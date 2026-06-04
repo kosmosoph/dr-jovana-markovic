@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Navigation } from "./Navigation";
-import { HeroSection } from "./HeroSection";
-import { AboutSection } from "./AboutSection";
-import { TreatmentsSection } from "./TreatmentsSection";
-import { GallerySection } from "./GallerySection";
-import { ContactSection } from "./ContactSection";
-import { BookingModal } from "./BookingModal";
+import { Navigation } from "../layout/Navigation";
+import { HeroSection } from "../sections/HeroSection";
+import { AboutSection } from "../sections/AboutSection";
+import { TreatmentsSection } from "../sections/TreatmentsSection";
+import { GallerySection } from "../sections/GallerySection";
+import { ContactSection } from "../sections/ContactSection";
+import { BookingModal } from "../BookingModal";
 
 export function HomePage() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);

@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { PricingPage } from "@/components/PricingPage";
-import { Navigation } from "@/components/Navigation";
+import { PricingPage } from "@/components/pages/PricingPage";
+import { Navigation } from "@/components/layout/Navigation";
 import { BookingModal } from "@/components/BookingModal";
 
 export default function Pricing() {
